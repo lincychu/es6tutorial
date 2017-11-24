@@ -1096,9 +1096,9 @@ factorial(5, 1) // 120
 非尾递归的 Fibonacci 数列实现如下。
 
 ```javascript
+//Fibonacci数列的定义是：F(0) = 0; F(1) = 1; F(n) = F(n - 1) + F(n - 2), (n >= 2);
 function Fibonacci (n) {
-  if ( n <= 1 ) {return 1};
-
+  if (n === 0 || n === 1) {return n};
   return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
