@@ -760,7 +760,7 @@ Foo.prop // undefined
 
 ```javascript
 class MyClass {
-  myProp = 42;
+  myProp = 42; //此处在Chrome和Firefox浏览器上会报错
 
   constructor() {
     console.log(this.myProp); // 42
